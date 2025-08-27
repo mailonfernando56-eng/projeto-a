@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Roblox - Brainrot & Frutas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Jogos Roblox</h1>
+        <nav>
+            <ul>
+                <li><a href="#brainrot">Roube um Brainrot</a></li>
+                <li><a href="#garden">Grow a Garden</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <!-- Seção Roube um Brainrot -->
+        <section id="brainrot" class="game-section">
+            <h2>Roube um Brainrot</h2>
+            <div class="add-item">
+                <h3>Adicionar Novo Brainrot</h3>
+                <form id="add-brainrot-form">
+                    <input type="text" id="brainrot-name" placeholder="Nome do Brainrot" required>
+                    <input type="text" id="brainrot-rarity" placeholder="Raridade">
+                    <input type="text" id="brainrot-value" placeholder="Valor">
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+            
+            <div class="catalog">
+                <h3>Brainrots Disponíveis</h3>
+                <div id="brainrot-list" class="items-container">
+                    <!-- Itens serão adicionados via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Grow a Garden -->
+        <section id="garden" class="game-section">
+            <h2>Grow a Garden</h2>
+            <div class="add-item">
+                <h3>Adicionar Nova Fruta</h3>
+                <form id="add-fruit-form">
+                    <input type="text" id="fruit-name" placeholder="Nome da Fruta" required>
+                    <input type="text" id="fruit-rarity" placeholder="Raridade">
+                    <input type="text" id="fruit-season" placeholder="Temporada">
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+            
+            <div class="catalog">
+                <h3>Frutas Disponíveis</h3>
+                <div id="fruit-list" class="items-container">
+                    <!-- Itens serão adicionados via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Catálogo de Jogos Roblox &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
